@@ -1,7 +1,6 @@
 <?php
 require '../config/init.php';
 require '../inc/header.php';
-require '../config/db2.php'
 ?>
 
 <?php
