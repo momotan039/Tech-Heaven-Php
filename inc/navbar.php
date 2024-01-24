@@ -29,6 +29,9 @@ function isActivePage($page)
           <li class="nav-item">
             <a class="nav-link <?php echo isActivePage('users.php') ?>" href="<?php echo $pages ?>/users.php">Users</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link <?php echo isActivePage('editItems.php') ?>" href="<?php echo $pages ?>/items/editItems.php">Items</a>
+          </li>
           <form action="../pages/home.php" method="post">
             <li class="nav-item">
               <input name="logout" type="submit" class="nav-link" value="Logout">
