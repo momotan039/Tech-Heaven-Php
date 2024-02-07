@@ -1,3 +1,7 @@
+<?php 
+include "$root/app/categories/get.php";
+var_dump(getCategories())
+?>
 <div class="card mt-4">
     <div class="card-body">
         <h1 class="card-text text-center text-primary">
@@ -21,11 +25,12 @@
                     <div class="form-group">
                         <i class="fa-solid fa-tag"></i>
                         <label>Cat:</label><br>
+                        
                         <select class="form-select" name="cat-id">
                             <option selected>Select a Category</option>
-                            <?php foreach (array() as $cat) :
+                            <?php foreach (getCategories() as $cat) :
                             ?>
-                                <option value="<?php echo $cat['Cat_ID'] ?>"><?php echo $cat['Cat_Name'] ?></option>
+                                <option value="<?php echo $cat['Cat_Id'] ?>"><?php echo $cat['Cat_Name'] ?></option>
                             <?php
                             endforeach ?>
                         </select>
