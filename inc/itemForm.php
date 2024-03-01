@@ -1,6 +1,5 @@
 <?php 
 include "$root/app/categories/get.php";
-var_dump(getCategories())
 ?>
 <div class="card mt-4">
     <div class="card-body">
@@ -45,20 +44,9 @@ var_dump(getCategories())
                 <img class="col-12" src="../../template/img/laptop.jpg" alt="image">
             </div>
             </div>
-
-            <?php
-            // if (!$isEditForm) :
-            //     echo '
-            //     <div class="form-group">
-            //     <i class="fa-solid fa-lock"></i>
-            //     <label>Password:</label>
-            //     <input required name="password" class="form-control" type="password"">
-            //      </div>
-            //     ';
-            // endif;
-            ?>
+            
             <div class="text-center my-2">
-                <?php echo !$isEditForm ? '<input type="submit" class="btn btn-success" value="Register">'
+                <?php echo !$isEditForm ? '<input type="submit" class="btn btn-success" value="Add">'
                     : '<input type="submit" class="btn btn-success" value="Edit">
                      <input type="text" name="edit" hidden> 
                      '  ?>

@@ -1,0 +1,65 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* reset */
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+    color: #121717;
+}
+
+/* initalize variables */
+:root{
+    --text-color:#121717;
+    --secondary-color:#617D8A;
+    --light-color:#FFFFFF;
+    --back-color:#F0F2F5;
+    --button-color:#0DA6F2;
+} 
+
+/* start shared element style */
+a{
+    text-decoration: none;
+    color: #121717;
+}
+/* end shared element style */
+
+/* start header styling */
+header{
+    /* padding: 0 1rem; */
+}
+header nav{
+    display: flex;
+    justify-content: space-around;
+}
+header nav >div{
+    display: flex;
+    align-items: center;
+}
+header .logo{
+    font-weight: bold;
+}
+header nav ul.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
+header nav ul.menu li{
+font-size: 1.3rem;
+}
+
+header nav .right{
+    position: relative;
+}
+header nav .right .fa-magnifying-glass{
+    position: absolute;
+}
+header nav .right input[type=text]{
+    background-color: var(--back-color);
+    color: var(--secondary-color);
+    padding-left: 2rem;
+}
+
+/* end header styling */
