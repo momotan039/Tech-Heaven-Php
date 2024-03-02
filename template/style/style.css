@@ -27,6 +27,9 @@ a{
 .my-card{
     border-radius: 16px;
 }
+.my-container{
+
+}
 /* end shared element style */
 
 /* start header styling */
@@ -129,3 +132,21 @@ font-weight: bold;
     font-weight: bold;
 }
 /* end main-header style */
+
+/* start fragment-item Section */
+.fragment-item img{
+    width: 100%;
+    height: 300px;
+    border-color: transparent;
+}
+.fragment-item img.small{
+    height: 150px;
+}
+.fragment-item .title{
+margin: 0; 
+font-size: 1.2rem;   
+}
+.fragment-item .price{
+    color: var(--secondary-color);
+}
+/* end fragment-item Section */
