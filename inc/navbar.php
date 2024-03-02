@@ -24,10 +24,10 @@ function isActivePage($page)
 
   <div class="right">
   <i class="fa-solid fa-magnifying-glass"></i>
-    <input class="card" type="text" placeholder="Search">
+    <input  type="text" placeholder="Search">
     <div>
-      <a href="" class="card"><i class="fa-solid fa-heart"></i></a>
-      <a href="" class="card"><i class="fa-solid fa-cart-shopping"></i></a>
+      <a href="" ><i class="fa-solid fa-heart"></i></a>
+      <a href="" ><i class="fa-solid fa-cart-shopping"></i></a>
     </div>
   </div>
 </nav>

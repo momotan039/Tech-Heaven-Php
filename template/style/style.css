@@ -24,8 +24,8 @@ a{
     text-decoration: none;
     color: #121717;
 }
-.card{
-    border-radius: 1rem;
+.my-card{
+    border-radius: 16px;
 }
 /* end shared element style */
 
@@ -61,10 +61,11 @@ header nav .right{
 
 header nav .right .fa-magnifying-glass{
     position: absolute;
-    top: 0.8rem;
+    top: 1.2rem;
     left: 8px;
     color: var(--secondary-color);
     font-size: 1.3rem;
+    z-index: 1;
 }
 header nav .right input[type=text]{
     background-color: var(--back-color);
@@ -72,10 +73,12 @@ header nav .right input[type=text]{
     border-color: transparent;
     padding: 0.7rem 2rem;
     font-size: 1rem;
+    border-radius: 1rem;
 }
 header nav .right a{
     background-color: var(--back-color);
     padding: 0.8rem 1rem;
+    border-radius: 1rem;
 }
 
 /* end header styling */
