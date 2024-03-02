@@ -18,5 +18,5 @@ if(!empty($_SESSION['user']))
     <?php
 }
 else
-header('location:login.php')
+header('location:main.php')
 ?>
