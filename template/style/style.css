@@ -18,6 +18,10 @@
     --back-color:#F0F2F5;
     --button-color:#0DA6F2;
 } 
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
 
 /* start shared element style */
 a{
@@ -150,3 +154,12 @@ font-size: 1.2rem;
     color: var(--secondary-color);
 }
 /* end fragment-item Section */
+
+/* start footer style */
+footer{
+    border-top: 0.2rem var(--back-color) solid;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+/* end footer style */
