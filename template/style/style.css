@@ -24,11 +24,15 @@ a{
     text-decoration: none;
     color: #121717;
 }
+.card{
+    border-radius: 1rem;
+}
 /* end shared element style */
 
 /* start header styling */
 header{
-    /* padding: 0 1rem; */
+    padding: 1rem 0;
+    border-bottom: 0.2rem var(--back-color) solid;
 }
 header nav{
     display: flex;
@@ -37,6 +41,7 @@ header nav{
 header nav >div{
     display: flex;
     align-items: center;
+    gap: 3rem;
 }
 header .logo{
     font-weight: bold;
@@ -53,13 +58,24 @@ font-size: 1.3rem;
 header nav .right{
     position: relative;
 }
+
 header nav .right .fa-magnifying-glass{
     position: absolute;
+    top: 0.8rem;
+    left: 8px;
+    color: var(--secondary-color);
+    font-size: 1.3rem;
 }
 header nav .right input[type=text]{
     background-color: var(--back-color);
     color: var(--secondary-color);
-    padding-left: 2rem;
+    border-color: transparent;
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+}
+header nav .right a{
+    background-color: var(--back-color);
+    padding: 0.8rem 1rem;
 }
 
 /* end header styling */

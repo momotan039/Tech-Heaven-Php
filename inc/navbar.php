@@ -10,7 +10,7 @@ function isActivePage($page)
 <nav>
   <div>
     <h1 class="logo">
-      Tech Heaven
+      <a href="">Tech Heaven</a>
     </h1>
       <ul class="menu">
         <li><a href="#">New Tech</a></li>
@@ -28,7 +28,6 @@ function isActivePage($page)
     <div>
       <a href="" class="card"><i class="fa-solid fa-heart"></i></a>
       <a href="" class="card"><i class="fa-solid fa-cart-shopping"></i></a>
-      <i class="fa-regular fa-car-side"></i>
     </div>
   </div>
 </nav>
