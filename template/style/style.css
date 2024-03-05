@@ -8,6 +8,7 @@
     box-sizing: border-box;
     font-family: "Work Sans", sans-serif;
     color: #121717;
+    transition: all .3s;
 }
 
 /* initalize variables */
@@ -154,6 +155,92 @@ font-size: 1.2rem;
     color: var(--secondary-color);
 }
 /* end fragment-item Section */
+
+/* start  product details page*/
+.prodcut-detials .breadcrumb ul{
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.prodcut-detials .breadcrumb li{
+position: relative;
+color: var(--secondary-color);
+font-size: 1.2rem;
+}
+.prodcut-detials .breadcrumb li:last-of-type{
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.prodcut-detials .breadcrumb li:not(:last-child)::after{
+    position: absolute;
+    content: '/';
+    color: var(--text-color);
+    font-weight: bold;
+    right: -1.2rem;
+}
+.prodcut-detials .gallery{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-rows: 300px 300px;
+    gap: 5px;
+}
+.prodcut-detials .gallery img{
+    width: 100%;
+    height: 100%;
+}
+.prodcut-detials .gallery img:nth-child(1){
+    grid-row: span 2;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.prodcut-detials .gallery img:nth-child(3){
+    border-top-right-radius: 10px;
+}
+
+.prodcut-detials .gallery :nth-child(5){
+    border-bottom-right-radius: 10px;
+}
+
+.reviews .stars i{
+    color: var(--back-color);
+}
+.reviews .stars i.fill{
+   color: var(--button-color);
+}
+.reviews .bars{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.reviews .bars .bar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reviews .bar{
+    background-color:var(--back-color);
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 9px;
+    border-radius: 1rem;
+}
+.reviews .bars .bar::before{
+position: absolute;
+content: '';
+border-radius: 10px;
+left: 0;
+width: var(--percentage);
+height: 100%;
+background-color: var(--button-color);
+z-index: 1;
+}
+
+/* end  product details page*/
+
 
 /* start footer style */
 footer{
