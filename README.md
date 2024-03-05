@@ -1,4 +1,4 @@
-# 🛒Welcome to Tech Heaven!
+# 🛒💸🛍️Welcome to Tech Heaven!
 
 ## About the Project
 Welcome to our ecommerce paradise! Tech Heaven is a robust and user-friendly ecommerce platform crafted with PHP and MySQL, designed to provide a seamless shopping experience for customers.
