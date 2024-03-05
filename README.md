@@ -25,8 +25,7 @@ Explore our enchanting pages:
 ## Get Started
 1. Clone the repository: `git clone [repository URL]`
 2. Set up your local development environment.
-3. Import the database schema.
-4. Launch the application and start shopping!
+3. Launch the application and start shopping!
 
 ## Contribution Guidelines
 We welcome contributions from the community to enhance Tech Heaven. Feel free to submit bug fixes, feature enhancements, or any other improvements via pull requests.
