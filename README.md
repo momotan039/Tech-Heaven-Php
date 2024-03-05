@@ -20,7 +20,7 @@ Explore our enchanting pages:
 ## Technologies Used
 - Backend: PHP
 - Database: MySQL
-- Frontend: HTML, CSS, JavaScript (if applicable)
+- Frontend: HTML, CSS, JavaScript, Bootstrap
 
 ## Get Started
 1. Clone the repository: `git clone [repository URL]`
