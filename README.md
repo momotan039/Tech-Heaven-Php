@@ -1,4 +1,4 @@
-# 🛒Welcome to Tech Heaven!
+# 🛒💸🛍️Welcome to Tech Heaven!
 
 ## About the Project
 Welcome to our ecommerce paradise! Tech Heaven is a robust and user-friendly ecommerce platform crafted with PHP and MySQL, designed to provide a seamless shopping experience for customers.
@@ -20,13 +20,12 @@ Explore our enchanting pages:
 ## Technologies Used
 - Backend: PHP
 - Database: MySQL
-- Frontend: HTML, CSS, JavaScript (if applicable)
+- Frontend: HTML, CSS, JavaScript, Bootstrap
 
 ## Get Started
 1. Clone the repository: `git clone [repository URL]`
 2. Set up your local development environment.
-3. Import the database schema.
-4. Launch the application and start shopping!
+3. Launch the application and start shopping!
 
 ## Contribution Guidelines
 We welcome contributions from the community to enhance Tech Heaven. Feel free to submit bug fixes, feature enhancements, or any other improvements via pull requests.
