@@ -8,9 +8,9 @@ require '../inc/header.php';
         <div class="image my-card" style="background-image: url(<?php echo $imgs . '/main-header.png' ?>);">
             <h1>Welcome to the Tech Paradise</h1>
             <div class="search-contianer">
-                <form action="">
+                <form action="search.php" method="get">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <input class="my-card" type="text" placeholder="Search by product type, brand, or category">
+                    <input name="s" class="my-card" type="text" placeholder="Search by product type, brand, or category">
                     <button class="btn" type="submit">Search</button>
                 </form>
             </div>

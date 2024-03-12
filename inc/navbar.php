@@ -22,7 +22,9 @@ function isActivePage($page)
 
   <div class="right">
   <i class="fa-solid fa-magnifying-glass"></i>
-    <input  type="text" placeholder="Search">
+    <form action="search.php">
+    <input name="s"  type="text" placeholder="Search">
+    </form>
     <div>
       <a href="" ><i class="fa-solid fa-heart"></i></a>
       <a href="" ><i class="fa-solid fa-cart-shopping"></i></a>
