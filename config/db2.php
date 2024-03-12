@@ -26,6 +26,5 @@ class DBConnect{
     }
 }
 
-$dbConnect=new DBConnect('localhost','root','','test');
+$dbConnect=new DBConnect('localhost','root','','ecommerce');
 $con=$dbConnect->connect();
-
