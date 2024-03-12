@@ -9,6 +9,6 @@
     <link rel="stylesheet" href="<?php echo $style?>/style.css">
 </head>
 <body>
-<header >
+<header class="mb-4">
 <?php include 'navbar.php'?>
 </header>
