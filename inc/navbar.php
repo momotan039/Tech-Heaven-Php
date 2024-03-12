@@ -10,15 +10,13 @@ function isActivePage($page)
 <nav>
   <div>
     <h1 class="logo">
-      <a href="">Tech Heaven</a>
+      <a href="<?php echo $root?>">Tech Heaven</a>
     </h1>
       <ul class="menu">
-        <li><a href="#">New Tech</a></li>
-        <li><a href="#">SmartPhones</a></li>
-        <li><a href="#">Laptops</a></li>
-        <li><a href="#">Gaming</a></li>
-        <li><a href="#">Audio</a></li>
-        <li><a href="#">Accessories</a></li>
+        <li><a href="<?php echo $pages.'/smartphones.php'?>">SmartPhones</a></li>
+        <li><a href="<?php echo $pages.'/laptops.php'?>">Laptops</a></li>
+        <li><a href="<?php echo $pages.'/gaming.php'?>">Gaming</a></li>
+        <li><a href="<?php echo $pages.'/audio.php'?>">Audio</a></li>
       </ul>
   </div>
 
