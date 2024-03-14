@@ -10,7 +10,8 @@ CREATE TABLE Users (
 
 CREATE TABLE Categories (
     category_id INT PRIMARY KEY AUTO_INCREMENT,
-    category_name VARCHAR(255)
+    category_name VARCHAR(255),
+    image VARCHAR (255)
 );
 
 CREATE TABLE Subcategories (
