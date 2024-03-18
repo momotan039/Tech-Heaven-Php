@@ -20,7 +20,12 @@ CREATE TABLE Subcategories (
     category_id INT,
     FOREIGN KEY (category_id) REFERENCES Categories(category_id)
 );
-
+CREATE TABLE Specifications (
+    specification_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255),
+    subcategory_id INT,
+    FOREIGN KEY (subcategory_id) REFERENCES Subcategories(subcategory_id)
+);
 
 Create Table Brands(
 brand_id INT PRIMARY KEY AUTO_INCREMENT,
@@ -50,6 +55,14 @@ Create Table Product_Images(
     FOREIGN KEY (product_id) REFERENCES Products(product_id)
 )
 
+CREATE TABLE ProductSpecifications (
+    product_id INT,
+    specification_id INT,
+    value VARCHAR(255),
+    FOREIGN KEY (product_id) REFERENCES Products(product_id),
+    FOREIGN KEY (specification_id) REFERENCES Specifications(specification_id),
+    PRIMARY KEY (product_id, specification_id)
+);
 
 
 CREATE TABLE Orders (
@@ -88,6 +101,7 @@ INSERT INTO Brands (brand_id, brand_name) VALUES
 (2, 'Samsung'),
 (3, 'Lenovo'),
 (4, 'Microsoft'),
+
 
 -- Categories
 INSERT INTO Categories (category_id, category_name) VALUES
@@ -132,3 +146,82 @@ INSERT INTO Reviews (product_id, user_id, rating, comment, review_date) VALUES
 (1, 1, 5, 'Great phone, amazing camera quality!', '2024-03-10'),
 (1, 2, 5, 'Love everything about it, highly recommend!', '2024-03-11');
 
+
+INSERT INTO Specifications (name, subcategory_id)
+VALUES
+    ('Screen Size', 1),
+    ('RAM Capacity', 1),
+    ('Storage Capacity', 1),
+    ('Processor', 1),
+    ('Operating System', 1),
+    ('Camera Resolution', 1),
+    ('Battery Capacity', 1),
+    ('Connectivity', 1),
+    ('Dimensions', 1),
+    ('Weight', 1),
+    ('SIM Type', 1),
+    ('Colors Available', 1),
+    ('Display Type', 1),
+    ('Display Resolution', 1),
+    ('Display Features', 1),
+    ('Biometric Authentication', 1),
+    ('Water and Dust Resistance', 1),
+    ('Wireless Charging', 1),
+    ('Fast Charging', 1),
+    ('Audio Features', 1),
+    ('Additional Sensors', 1),
+    ('Screen Size', 2),
+    ('RAM Capacity', 2),
+    ('Storage Capacity', 2),
+    ('Processor', 2),
+    ('Operating System', 2),
+    ('Graphics Card', 2),
+    ('Display Resolution', 2),
+    ('Display Type', 2),
+    ('Battery Life', 2),
+    ('Weight', 2),
+    ('Dimensions', 2),
+    ('Ports', 2),
+    ('Wireless Connectivity', 2),
+    ('Keyboard Type', 2),
+    ('Touchscreen', 2),
+    ('Webcam', 2),
+    ('Audio Features', 2),
+    ('Security Features', 2),
+    ('Color', 2),
+    ('Screen Size', 3),
+    ('RAM Capacity', 3),
+    ('Storage Capacity', 3),
+    ('Processor', 3),
+    ('Operating System', 3),
+    ('Display Resolution', 3),
+    ('Display Type', 3),
+    ('Battery Life', 3),
+    ('Weight', 3),
+    ('Dimensions', 3),
+    ('Camera Resolution', 3),
+    ('Connectivity', 3),
+    ('Ports', 3),
+    ('Wireless Connectivity', 3),
+    ('Biometric Authentication', 3),
+    ('Color', 3);
+    ('Display Type', 4),
+    ('Display Size', 4),
+    ('Resolution', 4),
+    ('Operating System', 4),
+    ('Processor', 4),
+    ('Storage Capacity', 4),
+    ('RAM Capacity', 4),
+    ('Battery Life', 4),
+    ('Connectivity', 4),
+    ('Sensors', 4),
+    ('Water Resistance', 4),
+    ('GPS', 4),
+    ('NFC', 4),
+    ('Bluetooth', 4),
+    ('Heart Rate Monitor', 4),
+    ('Fitness Tracking', 4),
+    ('Sleep Tracking', 4),
+    ('Music Playback', 4),
+    ('Voice Assistant', 4),
+    ('Color', 4);
