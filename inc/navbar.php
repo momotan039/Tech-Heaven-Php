@@ -17,6 +17,7 @@ function isActivePage($page)
         <li><a href="<?php echo $pages.'/laptops.php'?>">Laptops</a></li>
         <li><a href="<?php echo $pages.'/gaming.php'?>">Gaming</a></li>
         <li><a href="<?php echo $pages.'/audio.php'?>">Audio</a></li>
+        <li><a href="<?php echo $pages.'/admin/add-item.php'?>">add</a></li>
       </ul>
   </div>
 
